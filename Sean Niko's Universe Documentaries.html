@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Niko's Universe Documentaries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        header, footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff0000;
+            animation: slideIn 1s ease-in-out;
+        }
+        nav a {
+            color: #ffffff;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #cc0000;
+        }
+        .container {
+            padding: 2em;
+        }
+        .card {
+            background-color: #f4f4f4;
+            padding: 1em;
+            margin: 1em 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .card h2 {
+            color: #ff0000;
+        }
+        .card p {
+            color: #333333;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .container {
+                padding: 1em;
+            }
+            .card {
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sean Niko's Universe Documentaries</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#documentaries">Documentaries</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="card">
+            <h2>Home</h2>
+            <p>Welcome to Sean Niko's Universe Documentaries, your source for the best documentaries explaining the birth of the universe and the Big Bang theory.</p>
+        </section>
+        <section id="about" class="card">
+            <h2>About</h2>
+            <p>Learn more about the Big Bang theory and the documentaries that explore the origins of our universe.</p>
+        </section>
+        <section id="documentaries" class="card">
+            <h2>Documentaries</h2>
+            <p>Explore our curated list of documentaries that delve into the mysteries of the universe's birth:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=HdPzOWlLrbE" target="_blank">Origins of the Universe 101 | National Geographic</a></li>
+                <li><a href="https://www.youtube.com/watch?v=PzJBKpEPBd0" target="_blank">National Geographic Documentary - Universe Big Bang - BBC Science Documentary</a></li>
+                <li><a href="https://www.youtube.com/watch?v=L2zg5gBU2sU" target="_blank">How The Universe Began - Full Documentary</a></li>
+            </ul>
+        </section>
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>Get in touch with us for more information or to suggest a documentary.</p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Sean Niko's Universe Documentaries</p>
+    </footer>
+</body>
+</html>
